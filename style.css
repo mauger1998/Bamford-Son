@@ -383,6 +383,31 @@ main {
     justify-content: center;
     gap:1rem;
 }
+@media(max-width:1050px) {
+    .testimonial-cards {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        place-items:center;
+        gap:5rem;
+    }
+    .card:nth-child(3) {
+        grid-column:1 / span 2;
+        width:50%;
+    }
+  
+}
+@media (max-width:852px) {
+    .testimonial-cards {
+        grid-template-columns: 1fr;
+    }
+    .card:nth-child(3) {
+        grid-column:1 / span 1;
+    }
+    .card {
+        width:25rem !important;
+    }
+
+}
 /***************/
 .contact {
     display:flex;
