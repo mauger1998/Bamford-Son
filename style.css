@@ -638,3 +638,30 @@ footer {
         gap:1rem;
     }
 }
+/*****************/
+button:hover {
+    cursor:pointer;
+}
+.contactButton:nth-child(1) {
+    border:2px solid var(--red);
+    transition:0.5s;
+}
+.contactButton:nth-child(1):hover {
+    background-color:transparent;
+    transition:0.5s;
+}
+.contactButton:nth-child(2) {
+    transition:0.5s;
+}
+.contactButton:nth-child(2):hover {
+    background-color:var(--red);
+    transition:0.5s;
+}
+.workButton:hover {
+    background-color:#d1142498 !important;
+    border-color:#d1142498 !important;
+    transition:0.5s;
+}
+.workButton {
+    transition:0.5s;
+}
