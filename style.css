@@ -371,7 +371,6 @@ main {
 .gallery-grid {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* height:100vh; */
     column-gap: 1rem;
     
 }
@@ -664,4 +663,42 @@ button:hover {
 }
 .workButton {
     transition:0.5s;
+}
+/***********Animations*********/
+.why-us-icons {
+    transform:translateY(100%);
+    opacity:0;
+}
+.gallery-one {
+    transform:translateX(-100%);
+    opacity:0;
+}
+.gallery-two {
+    transform:translateX(-100%);
+    opacity:0;
+}
+.gallery-three {
+    transform: translateY(-100%);
+    opacity:0;
+}
+.gallery-four {
+    opacity:0;
+}
+.gallery-five {
+    transform: translateY(100%);
+    opacity:0;
+}
+.gallery-six {
+    transform: translateX(100%);
+    opacity:0;
+}
+.gallery-seven {
+    transform: translateX(100%);
+    opacity:0;
+}
+.test-one,
+.test-two,
+.test-three {
+    transform:translateX(-250%);
+    opacity:0;
 }
