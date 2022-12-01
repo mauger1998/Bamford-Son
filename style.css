@@ -128,3 +128,52 @@ main {
     gap:1rem;
     transform:translateY(-8rem)
 }
+/*****************************/
+.why-us {
+    border:2px solid red;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:4rem;
+    text-align:center;
+    gap:4rem;
+}
+.why-us-titles {
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+}
+.why-us-icons img {
+    width:50px;
+}
+.why-us-icons {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:50%;
+    gap:3rem;
+    padding:1rem;
+    
+}
+.icon-one,
+.icon-two,
+.icon-three {
+    height:16rem;
+    padding:1rem;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    width:30vw;
+}
+.icon-one h3,
+.icon-three h3 {
+    width:30ch;
+}
+.why-us-icons p {
+    line-height:1.75;
+    width:90%;
+    font-weight:300;
+}
