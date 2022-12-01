@@ -9,6 +9,7 @@
     padding:0;
     box-sizing:border-box;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior:smooth;
 }
 /****** Safari Button Reset **********
 *************************************/
@@ -43,6 +44,10 @@ nav ul {
     align-items: center;
     
 }
+nav img {
+    width:50px;
+    display:none;
+}
 nav ul li a {
     text-decoration:none;
     color:white;
@@ -60,6 +65,15 @@ header button {
     top:50%;
     left:50%;
     transform: translate(-50%, -50%)
+}
+@media (max-width:964px) {
+    nav ul {
+        display:none;
+    }
+    nav img {
+        display:block;
+    }
+   
 }
 /************************************/
 main {
@@ -166,6 +180,49 @@ main {
     br {
         display:none;
     }
+    .hero-right {
+        overflow-x: hidden;
+        display:none;
+    }
+    .nav-button-container {
+        display:none;
+    }
+}
+@media (max-width:708px) {
+    .hero-left p {
+        width:100%;
+    }
+}
+@media (max-width:521px) {
+    .hero-left p {
+        width:110%;
+    }
+}
+@media (max-width:478px) {
+    span {
+        display:none;
+    }
+}
+@media (max-width:443px) {
+    .hero-left h1 {
+        width:120%;
+        align-self:center;
+    }
+    .title-container {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:120%;
+    }
+    .hero-left p {
+        font-size:0.75rem;
+        line-height:2;
+    }
+}
+@media (max-width:367px) {
+    .hero-left h1 {
+        font-size:2.5rem;
+    }
 }
 /*****************************/
 .why-us {
@@ -261,6 +318,19 @@ main {
     }
     .icon-three {
         grid-row:3;
+    }
+}
+@media (max-width:454px) {
+    .why-us-icons {
+        gap:10rem;
+    }
+    .why-us-icons p {
+        width:350%;
+    }
+}
+@media (max-width:400px) {
+    .why-us-icons h3 {
+        width:175%;
     }
 }
 /*************************/
@@ -408,6 +478,22 @@ main {
     }
 
 }
+@media (max-width:600px) {
+    .card {
+        max-width:20rem;
+    }
+}
+@media (max-width:448px) {
+    .card {
+        max-width:15rem;
+    }
+}
+@media (max-width:368px) {
+    .testimonial-titles p {
+        width:70%;
+        align-self:center;
+    }
+}
 /***************/
 .contact {
     display:flex;
@@ -450,6 +536,7 @@ fieldset {
 input {
     width:100%;
     height:2rem;
+    outline:none;
 }
 form button {
     width:6rem;
@@ -467,6 +554,40 @@ fieldset:nth-of-type(4) {
 fieldset:nth-of-type(4) p {
     font-size:0.8rem;
     font-weight:300;
+}
+#message:focus {
+    border:none !important;
+    outline:none !important;
+}
+input,
+#message {
+    padding:0.25rem;
+}
+@media (max-width:640px) {
+    fieldset {
+        width:75%;
+        align-self:center;
+    }
+    textarea {
+        width:100%;
+    }
+    fieldset:last-of-type {
+        text-align:left;
+    }
+    form button {
+        font-size:0.7rem;
+    }
+    
+    
+}
+@media (max-width:390px) {
+    .form-titles p:last-of-type {
+        width:90%;
+        align-self:center;
+    }
+    fieldset:last-of-type p {
+        font-size:0.75rem;
+    }
 }
 /********************/
 footer {
@@ -498,4 +619,22 @@ footer {
     justify-content: center;
     align-items: center;
     padding-top:4rem;
+}
+@media (max-width:628px) {
+    .top ul {
+        gap:3rem;
+    }
+    .bottom {
+        text-align:center;
+    }
+}
+@media (max-width:390px) {
+    footer {
+        font-size:0.8rem;
+    }
+}
+@media (max-width:359px) {
+    .top ul {
+        gap:1rem;
+    }
 }
