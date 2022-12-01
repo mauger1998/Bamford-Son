@@ -31,7 +31,7 @@ header {
     position:fixed;
     width:100vw;
     z-index:1;
-    background-color:var(--black);
+    background-color:rgba(28, 28, 28, 0.85);
 }
 nav {
     width:33%;
@@ -113,6 +113,7 @@ main {
 }
 .hero-right img {
     width:100%;
+    min-width:20rem;
 }
 .hero-image-left {
     display:flex;
@@ -128,17 +129,56 @@ main {
     gap:1rem;
     transform:translateY(-8rem)
 }
+@media (max-width:1137px) {
+    .hero-left h1 {
+        font-size:2.75rem;
+    }
+}
+@media (max-width:1043px) {
+    .hero-left h1 {
+        font-size:2.25rem;
+    }
+    .hero-left p {
+        font-size:0.9rem;
+    }
+}
+@media (max-width:964px) {
+    main {
+        grid-template-columns: 1fr;
+        justify-content:center;
+    }
+    .hero-left {
+        grid-row:2;
+        text-align:center;
+        align-items:center;
+        padding-bottom:4rem;
+    }
+    .hero-left h1 {
+        font-size:3rem;
+        width:100%;
+    }
+    
+    .hero-left p {
+        width:60%;
+        font-size:1rem;
+    }
+    br {
+        display:none;
+    }
+}
 /*****************************/
 .why-us {
-    border:2px solid red;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding:4rem;
+    padding-block:8rem;
+    background-color:#1f1f1f;
     text-align:center;
     gap:4rem;
 }
+/*108, 113, 113*/
 .why-us-titles {
     display:flex;
     flex-direction:column;
@@ -169,11 +209,56 @@ main {
     width:30vw;
 }
 .icon-one h3,
-.icon-three h3 {
+.icon-three h3,
+.icon-two h3 {
     width:30ch;
+}
+.icon-three h3 {
+    transform:translateY(-0.25rem)
 }
 .why-us-icons p {
     line-height:1.75;
     width:90%;
     font-weight:300;
+}
+@media (max-width:1281px) {
+    .why-us h3 {
+        font-size:1rem
+    }
+    .why-us p {}
+}
+@media (max-width:1029px) {
+    .why-us-icons {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        place-items:center;
+        gap:8rem;
+    }
+   
+    .icon-three {
+        grid-column: 1 /  span 2;
+    }
+    .icon-two p {
+        width:96%;
+    }
+}
+@media (max-width:850px) {
+    .why-us-icons {
+        grid-template-columns: 1fr;
+        row-gap:5rem;
+    }
+    .why-us-icons p {
+        width:200%;
+    }
+    .icon-one {
+        grid-column: 1/ span 2;
+        grid-row:1;
+    }
+    .icon-two {
+        grid-column:1 / span 2;
+        grid-row:2;
+    }
+    .icon-three {
+        grid-row:3;
+    }
 }
