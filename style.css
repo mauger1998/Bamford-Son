@@ -316,3 +316,61 @@ main {
     justify-content: center;
     row-gap:2rem;
 }
+/*********************/
+.testimonials {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    padding-top:4rem;
+    background-color:#1f1f1f;
+    gap:4rem;
+    padding-bottom:4rem;
+}
+.testimonial-titles {
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+}
+.testimonial-titles h2 {
+    font-size:2rem;
+}
+.testimonial-titles p {
+    font-size:0.75rem;
+    font-weight:300;
+}
+.testimonial-cards {
+    text-align:left;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    padding:4rem;
+}
+.card {
+    border:2px solid white;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap:2rem;
+    padding:1.5rem;
+}
+.card p {
+    line-height:1.75;
+    font-weight:300;
+}
+.placeholder {
+    height:3rem;
+    width:3rem;
+    background-color:lightgray;
+    border-radius:50%;
+}
+.card img {
+    width:30px;
+}
+.profile {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
