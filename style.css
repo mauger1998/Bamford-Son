@@ -1,0 +1,24 @@
+:root {
+    --red:#D11423;
+    --black:#1c1c1c;
+}
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/****** Safari Button Reset **********
+*************************************/
+button {
+    color:black;
+    border:none;
+}
+/************************************/
+body {
+    width:100vw;
+    background-color:var(--black);
+    color:white;
+}
