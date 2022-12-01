@@ -27,9 +27,11 @@ header {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding:1rem 4rem;
+    padding:1.5rem 4rem;
     position:fixed;
     width:100vw;
+    z-index:1;
+    background-color:var(--black);
 }
 nav {
     width:33%;
@@ -67,12 +69,13 @@ main {
     padding-inline:4rem;
 }
 .hero-left {
-    border:2px solid red;
     display:flex;
     flex-direction: column;
     justify-content: center;
     gap:2rem;
     height:100%;
+    align-items: flex-start;
+    padding-top:4rem;
 }
 .hero-left h1 {
     font-size:3rem;
@@ -80,6 +83,7 @@ main {
 .hero-left p {
     width:90%;
     line-height:1.75;
+    font-weight:300;
 }
 .hero-left button {
     width:8rem;
@@ -102,5 +106,25 @@ main {
     gap:0.75rem;
 }
 .hero-right {
-    border:2px solid blue;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-y: hidden;
+    gap:1rem;
+}
+.hero-right img {
+    width:100%;
+}
+.hero-image-left {
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.hero-image-left img:nth-of-type(2) {
+    height:22rem
+}
+.hero-image-right {
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    transform:translateY(-8rem)
 }
