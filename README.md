@@ -9,7 +9,7 @@ Fonts: Montseratt
 Todo:
 Nav links
 Textures
-Scroll Animations
-Cms
+Scroll Animations (Mobile)
+Cms (Api Call)
 Small screen hero image
-Logo
+

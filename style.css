@@ -36,6 +36,10 @@ header {
 }
 nav {
     width:33%;
+    order:2;
+}
+.nav-button-container {
+    order:3;
 }
 nav ul {
     display:flex;
@@ -43,6 +47,9 @@ nav ul {
     justify-content: space-between;
     align-items: center;
     
+}
+.logo-container {
+    order:1;
 }
 nav img {
     width:50px;
@@ -63,8 +70,17 @@ header button {
 .logo-container {
     position:absolute;
     top:50%;
-    left:50%;
+    left:10%;
     transform: translate(-50%, -50%)
+}
+header {
+    justify-content:flex-end;
+}
+nav {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%)
 }
 @media (max-width:964px) {
     nav ul {
@@ -656,9 +672,13 @@ button:hover {
     background-color:var(--red);
     transition:0.5s;
 }
-.workButton:hover {
+.workButton:hover,
+form button:hover {
     background-color:#d1142498 !important;
     border-color:#d1142498 !important;
+    transition:0.5s;
+}
+form button {
     transition:0.5s;
 }
 .workButton {
@@ -701,4 +721,125 @@ button:hover {
 .test-three {
     transform:translateX(-250%);
     opacity:0;
+}
+header {
+    overflow:hidden;
+}
+
+.logo-container {
+    overflow:hidden;
+    padding-block:4rem !important;
+    height:0.1rem !important;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.logo-container img {
+    width:125px;
+    overflow:hidden;
+   
+}
+footer img {
+    width:125px;
+}
+/***************************/
+.title-container {
+    position:relative;
+}
+.title-container img {
+    position:absolute;
+    top:83%;
+    left:35%;
+    width:21rem;
+    z-index:-1;
+}
+.icon-one {
+    position:relative;
+}
+.icon-one img:nth-of-type(2) {
+    position:absolute;
+    width:4.9rem;
+    left:24%;
+    top:40%;
+    z-index:-1;
+}
+.icon-two {
+    position:relative;
+}
+.icon-two img:nth-of-type(2) {
+    position:absolute;
+    width:5rem;
+    z-index:-1;
+    top:49%;
+}
+.icon-three {
+    position:relative;
+}
+.icon-three img:nth-of-type(2) {
+    position:absolute;
+    width:8rem;
+    top:40%;
+    right:12.5%;
+    z-index:-1;
+}
+.why-us > img {
+    position:absolute;
+    top:8%;
+    right:8%;
+    width:8rem;
+}
+.why-us {
+    position:relative;
+    
+}
+.image-gallery-titles {
+    position:relative;
+}
+.image-gallery-titles img {
+    position:absolute;
+    width:9rem;
+    right:20%;
+    top:30%;
+    z-index:-1;
+}
+.testimonial-titles {
+    position:relative;
+    
+}
+.testimonial-titles h2 {
+    z-index:1;
+}
+.testimonial-titles img {
+    position:absolute;
+    width:15rem;
+    top:33%;
+    right:-4%;
+    z-index:0;
+}
+.contact {
+    position:relative;
+}
+.contact > img {
+    position:absolute;
+    top:10%;
+    right:10%;
+    width:8rem;
+}
+.form-titles {
+    position:relative;
+}
+.form-titles img {
+    position:absolute;
+    top:55%;
+    width:9rem;
+    right:36%;
+    z-index:-1;
+}
+footer {
+    position:relative;
+}
+footer > img {
+    position:absolute;
+    width:4rem;
 }
