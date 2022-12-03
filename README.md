@@ -13,3 +13,8 @@ Scroll Animations (Mobile)
 Cms (Api Call)
 Small screen hero image
 
+sudocode
+
+if why-us.style.display == grid && why-us.style.gridTemplateColumns == "1fr:
+
+gasp.to(...)

@@ -17,16 +17,28 @@ workButton.addEventListener("click", (e) => {
     workSection.scrollIntoView()
 })
 
+const matchResult = window.matchMedia("(max-width: 1300px")
+
+onresize = (event) => {
+    hello()
+}
+
+function hello(){
+    if (matchResult.matches == true) {
+    console.log("true")
+}
+}
 gsap.to(whyUs, {
     scrollTrigger: {
         trigger: ".why-us-titles",
         scrub:true,
         start:"top bottom",
-        end:"+=1000",
+        end:"+=800",
     },
     y:0,
     opacity:1
 })
+
 gsap.to(".gallery-one", {
     scrollTrigger: {
         trigger: ".image-gallery",
@@ -116,7 +128,7 @@ gsap.to(".test-two", {
         trigger: ".testimonial-cards",
         scrub:true,
         start:"top bottom",
-        end:"+=650",
+        end:"+=550",
     },
     x:0,
     opacity:1
@@ -126,7 +138,7 @@ gsap.to(".test-one", {
         trigger: ".testimonial-cards",
         scrub:true,
         start:"top bottom",
-        end:"+=750",
+        end:"+=600",
     },
     x:0,
     opacity:1
