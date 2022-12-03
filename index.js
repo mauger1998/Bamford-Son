@@ -118,7 +118,7 @@ gsap.to(".test-three", {
         trigger: ".testimonial-cards",
         scrub:true,
         start:"top bottom",
-        end:"+=500",
+        end:"+=400",
     },
     x:0,
     opacity:1
@@ -128,7 +128,7 @@ gsap.to(".test-two", {
         trigger: ".testimonial-cards",
         scrub:true,
         start:"top bottom",
-        end:"+=550",
+        end:"+=500",
     },
     x:0,
     opacity:1
@@ -142,6 +142,23 @@ gsap.to(".test-one", {
     },
     x:0,
     opacity:1
+})
+
+
+/**************************/
+
+const URL = `https://a0i4x4gc.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'testimonial'%5D`
+
+
+fetch(URL)
+.then((res) => res.json())
+.then(({ result })=> {
+    const testimonialComments = Array.from(document.querySelectorAll(".comment"))
+    console.log(result)
+    result.forEach((result, index) => {
+        testimonialComments[index].textContent = result.comment
+    })
+
 })
 
 
