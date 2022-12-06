@@ -17,15 +17,75 @@ workButton.addEventListener("click", (e) => {
     workSection.scrollIntoView()
 })
 
-const matchResult = window.matchMedia("(max-width: 1300px")
+const matchResult = window.matchMedia("(max-width: 1050px")
 
-onresize = (event) => {
-    hello()
-}
+hello()
 
 function hello(){
     if (matchResult.matches == true) {
-    console.log("true")
+        gsap.to(".test-three", {
+            scrollTrigger: {
+                trigger: ".test-three",
+                scrub:true,
+                start:"top bottom",
+                end:"+=400",
+            },
+            x:0,
+            opacity:1
+        })
+        gsap.to(".test-two", {
+            scrollTrigger: {
+                trigger: ".test-two",
+                scrub:true,
+                start:"top bottom",
+                end:"+=500",
+            },
+            x:0,
+            opacity:1
+        })
+        gsap.to(".test-one", {
+            scrollTrigger: {
+                trigger: ".test-one",
+                scrub:true,
+                start:"top bottom",
+                end:"+=600",
+            },
+            x:0,
+            opacity:1
+        })
+        
+} else {
+    gsap.to(".test-three", {
+        scrollTrigger: {
+            trigger: ".testimonial-cards",
+            scrub:true,
+            start:"top bottom",
+            end:"+=400",
+        },
+        x:0,
+        opacity:1
+    })
+    gsap.to(".test-two", {
+        scrollTrigger: {
+            trigger: ".testimonial-cards",
+            scrub:true,
+            start:"top bottom",
+            end:"+=500",
+        },
+        x:0,
+        opacity:1
+    })
+    gsap.to(".test-one", {
+        scrollTrigger: {
+            trigger: ".testimonial-cards",
+            scrub:true,
+            start:"top bottom",
+            end:"+=600",
+        },
+        x:0,
+        opacity:1
+    })
+    
 }
 }
 gsap.to(whyUs, {
@@ -39,110 +99,43 @@ gsap.to(whyUs, {
     opacity:1
 })
 
-gsap.to(".gallery-one", {
-    scrollTrigger: {
-        trigger: ".image-gallery",
-        scrub: true,
-        start:"top bottom",
-        end: "+=500",
-    },
-    x:0,
-    opacity:1,
+
+
+    // gsap.to(".test-three", {
+    //     scrollTrigger: {
+    //         trigger: ".testimonial-cards",
+    //         scrub:true,
+    //         start:"top bottom",
+    //         end:"+=400",
+    //     },
+    //     x:0,
+    //     opacity:1
+    // })
+    // gsap.to(".test-two", {
+    //     scrollTrigger: {
+    //         trigger: ".testimonial-cards",
+    //         scrub:true,
+    //         start:"top bottom",
+    //         end:"+=500",
+    //     },
+    //     x:0,
+    //     opacity:1
+    // })
+    // gsap.to(".test-one", {
+    //     scrollTrigger: {
+    //         trigger: ".testimonial-cards",
+    //         scrub:true,
+    //         start:"top bottom",
+    //         end:"+=600",
+    //     },
+    //     x:0,
+    //     opacity:1
+    // })
     
-    
-})
-gsap.to(".gallery-two", {
-    scrollTrigger: {
-        trigger: ".gallery-one",
-        scrub: true,
-        start:"bottom bottom",
-        end: "+=500",
-    },
-    x:0,
-    opacity:1,
-    
-})
-gsap.to(".gallery-three", {
-    scrollTrigger: {
-        trigger: ".gallery-one",
-        scrub: true,
-        start:"top bottom",
-        end: "+=500",
-    },
-    y:0,
-    opacity:1,
-    
-})
-gsap.to(".gallery-four", {
-    scrollTrigger: {
-        trigger: ".gallery-one",
-        scrub:true,
-        start:"bottom bottom",
-        end:"+=500",
-    },
-    y:0,
-    opacity:1
-})
-gsap.to(".gallery-five", {
-    scrollTrigger: {
-        trigger: ".gallery-four",
-        scrub:true,
-        start:"top bottom",
-        end:"+=800",
-    },
-    y:0,
-    opacity:1
-})
-gsap.to(".gallery-six", {
-    scrollTrigger: {
-        trigger: ".gallery-one",
-        scrub:true,
-        start:"top bottom",
-        end:"+=500",
-    },
-    x:0,
-    opacity:1
-})
-gsap.to(".gallery-seven", {
-    scrollTrigger: {
-        trigger: ".gallery-six",
-        scrub:true,
-        start:"bottom bottom",
-        end:"+=500",
-    },
-    x:0,
-    opacity:1
-})
-gsap.to(".test-three", {
-    scrollTrigger: {
-        trigger: ".testimonial-cards",
-        scrub:true,
-        start:"top bottom",
-        end:"+=400",
-    },
-    x:0,
-    opacity:1
-})
-gsap.to(".test-two", {
-    scrollTrigger: {
-        trigger: ".testimonial-cards",
-        scrub:true,
-        start:"top bottom",
-        end:"+=500",
-    },
-    x:0,
-    opacity:1
-})
-gsap.to(".test-one", {
-    scrollTrigger: {
-        trigger: ".testimonial-cards",
-        scrub:true,
-        start:"top bottom",
-        end:"+=600",
-    },
-    x:0,
-    opacity:1
-})
+
+
+
+
 
 
 /**************************/
