@@ -471,6 +471,11 @@ button img {
         gap:10rem;
     }
 }
+@media (max-width:348px) {
+    .why-us-icons img {
+        width:35px !important;
+    }
+}
 
 /*************************/
 .image-gallery img {
@@ -543,6 +548,17 @@ button img {
     }
     .image-gallery-titles p {
         font-size:0.8rem;
+    }
+}
+@media (max-width:652px) {
+    .linkToWork p {
+        font-size:0.8rem !important;
+    }
+}
+@media (max-width:386px) {
+    .linkToWork {
+        width:130%;
+        text-align:left;
     }
 }
 /*********************/
