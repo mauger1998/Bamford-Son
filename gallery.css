@@ -1,0 +1,112 @@
+:root {
+    --red:#D11423;
+    --black:#1a1a1a;
+}
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior:smooth;
+}
+/****** Safari Button Reset **********
+*************************************/
+button {
+    color:black;
+    border:none;
+}
+/************************************/
+body {
+    width:100vw;
+    background-color:var(--black);
+    color:white;
+}
+/**********************/
+header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 4rem;
+    position:fixed;
+    width:100vw;
+    z-index:1;
+    background-color:rgba(26, 26, 26, 0.85);
+}
+nav {
+    width:33%;
+    order:2;
+}
+.nav-button-container {
+    order:3;
+}
+nav ul {
+    display:flex;
+    list-style:none;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo-container {
+    order:1;
+}
+nav img {
+    width:50px;
+    display:none;
+}
+nav ul li a {
+    text-decoration:none;
+    color:white;
+    font-weight:400;
+    font-weight:200 !important;
+}
+header button {
+    width:6rem;
+    padding-block:0.5rem;
+    font-weight:bold;
+    background-color:var(--red);
+    color:white;
+}
+.logo-container {
+    position:absolute;
+    top:50%;
+    left:10%;
+    transform: translate(-50%, -50%)
+}
+header {
+    justify-content:flex-end;
+}
+nav {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%)
+}
+.logo-container {
+    overflow:hidden;
+    padding-block:4rem !important;
+    height:0.1rem !important;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.logo-container img {
+    width:125px;
+    overflow:hidden;
+   
+}
+footer img {
+    width:125px;
+}
+@media (max-width:964px) {
+    nav ul {
+        display:none;
+    }
+    nav img {
+        display:block;
+    }
+   
+}
+/************************************/
