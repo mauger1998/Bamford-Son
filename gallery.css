@@ -44,7 +44,8 @@ nav {
 nav ul {
     display:flex;
     list-style:none;
-    justify-content: space-between;
+    justify-content: center;
+    gap:3rem;
     align-items: center;
     
 }
@@ -58,8 +59,8 @@ nav img {
 nav ul li a {
     text-decoration:none;
     color:white;
-    font-weight:400;
-    font-weight:200 !important;
+    font-weight:700;
+    
 }
 header button {
     width:6rem;
@@ -137,14 +138,21 @@ main {
     
 
 }
-.class {
-    height:68vh;
-    
-}
+
 .leftGrid img,
 .rightGrid img {
     width:90%;
     max-height:90%;
+}
+header button {
+    cursor:pointer;
+    border:2px solid var(--red);
+    transition:0.5s;
+}
+header button:hover {
+    background-color:transparent;
+    transition:0.5s;
+
 }
 .rightGrid {
     display:grid;
@@ -165,4 +173,120 @@ h1 {
     gap:1rem;
     align-items: flex-start;
 
+}
+
+footer {
+    display:flex;
+    flex-direction: column;
+    padding:4rem;
+    background-color:#1f1f1f;
+   
+}
+.top {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom:1px solid white;
+    padding-bottom:4rem;
+    gap:3rem;
+}
+.footerTexture {
+    width:90px;
+}
+.top ul {
+    display:flex;
+    list-style:none;
+    gap:6rem;
+}
+.top ul li a {
+    text-decoration:none;
+    color:white;
+}
+.bottom {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:4rem;
+}
+@media (max-width:628px) {
+    .top ul {
+        gap:3rem;
+    }
+    .bottom {
+        text-align:center;
+    }
+}
+@media (max-width:390px) {
+    footer {
+        font-size:0.8rem;
+    }
+}
+@media (max-width:359px) {
+    .top ul {
+        gap:1rem;
+    }
+}
+/*****************/
+@media (max-width:728px) {
+    .titles p {
+        font-size:0.8rem;
+
+    }
+    .titles h1 {
+        font-size:2.5rem;
+    }
+    .grid {
+        padding-inline:0;
+        width:98vw;
+    }
+    .leftGrid img,
+    .rightGrid img {
+        width:100% ;
+        
+    }
+    .leftGrid,
+    .rightGrid {
+        max-width:100vw;;
+    }
+}
+@media (max-width:538px) {
+    .titles h1 {
+        font-size:2rem;
+    }
+    .titles p {
+        font-size:0.75rem;
+    }
+    .grid {
+        padding-block:4rem;
+    }
+}
+@media (max-width:378px) {
+    .titles h1 {
+        font-size:1.75rem;
+    }
+    .titles p {
+        font-size:0.75rem;
+    }
+}
+@media (max-width:336px) {
+    .titles h1 {
+        font-size:1.35rem;
+    }
+    .titles p {
+        font-size:0.65rem;
+    }
+}
+@media (max-width:292px) {
+    .titles h1 {
+        font-size:1.25rem;
+    }
+    .titles p {
+        font-size:0.65rem;
+    }
+}
+@media (max-width:604px) {
+    .footerTexture {
+        width:75px;
+    }
 }

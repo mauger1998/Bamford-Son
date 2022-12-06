@@ -45,9 +45,14 @@ nav {
 nav ul {
     display:flex;
     list-style:none;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap:3rem;
     
+    
+}
+strong {
+    font-weight:700;
 }
 .logo-container {
     order:1;
@@ -59,7 +64,7 @@ nav img {
 nav ul li a {
     text-decoration:none;
     color:white;
-    font-weight:400;
+    font-weight:700;
     
 }
 header button {
@@ -563,6 +568,20 @@ button img {
     font-size:0.75rem;
     font-weight:300;
 }
+.testimonial-titles button {
+    padding-block:0.25rem;
+    width:6rem;
+    background-color:var(--red);
+    border:2px solid var(--red);
+    transition:0.5s;
+    color:white;
+    font-weight:700;
+}
+.testimonial-titles button:hover {
+    cursor:pointer;
+    background-color:transparent;
+    transition:0.5s;
+}
 .testimonial-cards {
     text-align:left;
     display:flex;
@@ -992,3 +1011,27 @@ footer > img {
     }
 }
 /*************************/
+.linkToWork {
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    
+}
+.linkToWork p {
+    font-size:1rem ;
+    font-weight:bold;
+}
+.linkToWork button {
+    padding-block:0.25rem;
+    width:6rem;
+    font-weight:600;
+    background-color:var(--red);
+    color:white;
+    border:2px solid var(--red);
+    transition:0.5s;
+}
+.linkToWork button:hover {
+    cursor:pointer;
+    transition:0.5s;
+    background-color:transparent;
+}
