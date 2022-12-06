@@ -17,77 +17,36 @@ workButton.addEventListener("click", (e) => {
     workSection.scrollIntoView()
 })
 
-const matchResult = window.matchMedia("(max-width: 1050px")
-
-hello()
-
-function hello(){
-    if (matchResult.matches == true) {
-        gsap.to(".test-three", {
-            scrollTrigger: {
-                trigger: ".test-three",
-                scrub:true,
-                start:"top bottom",
-                end:"+=400",
-            },
-            x:0,
-            opacity:1
-        })
-        gsap.to(".test-two", {
-            scrollTrigger: {
-                trigger: ".test-two",
-                scrub:true,
-                start:"top bottom",
-                end:"+=500",
-            },
-            x:0,
-            opacity:1
-        })
-        gsap.to(".test-one", {
-            scrollTrigger: {
-                trigger: ".test-one",
-                scrub:true,
-                start:"top bottom",
-                end:"+=600",
-            },
-            x:0,
-            opacity:1
-        })
-        
-} else {
-    gsap.to(".test-three", {
-        scrollTrigger: {
-            trigger: ".testimonial-cards",
-            scrub:true,
-            start:"top bottom",
-            end:"+=400",
-        },
-        x:0,
-        opacity:1
-    })
-    gsap.to(".test-two", {
-        scrollTrigger: {
-            trigger: ".testimonial-cards",
-            scrub:true,
-            start:"top bottom",
-            end:"+=500",
-        },
-        x:0,
-        opacity:1
-    })
-    gsap.to(".test-one", {
-        scrollTrigger: {
-            trigger: ".testimonial-cards",
-            scrub:true,
-            start:"top bottom",
-            end:"+=600",
-        },
-        x:0,
-        opacity:1
-    })
-    
-}
-}
+gsap.to(".test-three", {
+    scrollTrigger: {
+        trigger: ".test-three",
+        scrub:true,
+        start:"top bottom",
+        end:"+=200",
+    },
+    x:0,
+    opacity:1
+})
+gsap.to(".test-two", {
+    scrollTrigger: {
+        trigger: ".test-two",
+        scrub:true,
+        start:"top bottom",
+        end:"+=350",
+    },
+    x:0,
+    opacity:1
+})
+gsap.to(".test-one", {
+    scrollTrigger: {
+        trigger: ".test-one",
+        scrub:true,
+        start:"top bottom",
+        end:"+=500",
+    },
+    x:0,
+    opacity:1
+})
 gsap.to(whyUs, {
     scrollTrigger: {
         trigger: ".why-us-titles",
