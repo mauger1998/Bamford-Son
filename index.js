@@ -154,9 +154,11 @@ fetch(URL)
 .then((res) => res.json())
 .then(({ result })=> {
     const testimonialComments = Array.from(document.querySelectorAll(".comment"))
+    const testimonialName = Array.from(document.querySelectorAll(".firstName"))
     console.log(result)
     result.forEach((result, index) => {
         testimonialComments[index].textContent = result.comment
+        testimonialName[index].textContent = result.name
     })
 
 })

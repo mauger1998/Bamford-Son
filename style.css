@@ -1,6 +1,6 @@
 :root {
     --red:#D11423;
-    --black:#1c1c1c;
+    --black:#1a1a1a;
 }
 *,
 *::before,
@@ -32,7 +32,7 @@ header {
     position:fixed;
     width:100vw;
     z-index:1;
-    background-color:rgba(28, 28, 28, 0.85);
+    background-color:rgba(26, 26, 26, 0.85);
 }
 nav {
     width:33%;
@@ -116,11 +116,21 @@ main {
     font-weight:300;
 }
 .hero-left button {
-    width:8rem;
-    height:2.5rem;
+    width:10rem;
+    padding-block:0.5rem;
     font-weight:700;
     font-size:1rem;
 }
+.workButton {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+}
+button img {
+    width:30px;
+}
+
 .hero-left button:nth-of-type(1) {
     background-color:var(--red);
     color:white;
@@ -448,6 +458,8 @@ main {
     align-items: flex-start;
     gap:2rem;
     padding:1.5rem;
+    width:30vw;
+    height:19rem;
 }
 .card p {
     line-height:1.75;
@@ -554,11 +566,16 @@ input {
     outline:none;
 }
 form button {
-    width:6rem;
+    width:8rem;
     padding-block:0.75rem;
     font-weight:700;
     background-color:var(--red);
     color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1rem;
+    gap:0.5rem;
 }
 fieldset:nth-of-type(4) {
     flex-direction:row;
@@ -843,3 +860,4 @@ footer > img {
     position:absolute;
     width:4rem;
 }
+/*************************/
