@@ -1,5 +1,5 @@
 :root {
-    --red:#D11423;
+    --red:#40b3a2;
     --black:#1a1a1a;
 }
 *,
@@ -41,6 +41,9 @@ header {
     background-color:rgba(26, 26, 26, 0.85);
     overflow:visible !important;
     
+}
+.purple {
+    color:var(--red)
 }
 nav {
     width:33%;
@@ -383,7 +386,7 @@ button img {
     }
 }
 @media (max-width:478px) {
-    .title-container span {
+    .title-container span:nth-of-type(1) {
         display:none;
     }
 }
