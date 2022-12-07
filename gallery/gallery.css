@@ -104,10 +104,13 @@ nav {
 footer img {
     width:125px;
 }
-@media (max-width:692px) {
-    nav ul {
+.dropDown {
+    display:none;
+}
+@media (max-width:850px) {
+    /* nav ul {
         display:none;
-    }
+    } */
     nav img {
         display:block;
     }
@@ -118,12 +121,78 @@ footer img {
         display:none;
 
     }
+    .dropDown {
+        padding:2rem;
+       position:absolute;
+       top:100%;
+       z-index:10;
+       right:15%;
+       background-color:rgba(255, 255, 255, 1);
+       color:black;
+       width:20rem;
+       height:30rem;
+       transform:translateY(-100%);
+       opacity:0;
+       transition:0.5s;
+       display:block;
+       border:2px solid black;
+       padding-block:5rem;
+       
+   }
+ 
+   .dropDown li img {
+       width:25px;
+   }
+   .burger {
+       cursor:pointer;
+   }
+   .dropDown ul {
+       list-style:none;
+       display:flex;
+       flex-direction:column;
+       align-items: flex-start;
+       justify-content: space-evenly;;
+       height:100%;
+       gap:4rem;
+   }
+   .dropDown ul a:nth-of-type(1) {
+       align-self:center;
+   }
+   .logoDropDown {
+       width:100px;
+       
+       
+   }
+   .dropDown button {
+       display:flex;
+       align-items: center;
+       width:auto;
+       padding-left:1rem !important;
+       gap:0.5rem;
+       padding-right:1rem;
+   }
+   .dropDownAdd {
+       display:block;
+       transform:translateY(0);
+       opacity:1;
+       transition:0.5s;
+       
+   }
+   .dropDown ul a {
+       text-decoration:none;
+       color:black;
+       font-weight:bold;
+       display:flex;
+       align-items: center;
+       gap:1rem;
+   }
     .burger {
         position:absolute;
         right:10%;
         width:50px;
         top:50%;
         display:block;
+        cursor:pointer;
     }
     .nav-button-container {
         order:initial;
@@ -154,6 +223,16 @@ footer img {
 @media (max-width:456px) {
     .logo-container {
         left:20% !important;
+    }
+}
+@media (max-width:426px) {
+    .dropDown {
+        right:5%;
+    }
+}
+@media (max-width:348px) {
+    .dropDown {
+        width:15rem;
     }
 }
 @media (max-width:306px) {

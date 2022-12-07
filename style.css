@@ -10,6 +10,8 @@
     box-sizing:border-box;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior:smooth;
+    
+
 }
 /****** Safari Button Reset **********
 *************************************/
@@ -24,6 +26,10 @@ body {
     color:white;
 }
 /**********************/
+.dropDown {
+    display:none;
+    z-index:1000 !important;
+}
 header {
     display:flex;
     align-items: center;
@@ -33,6 +39,8 @@ header {
     width:100vw;
     z-index:1;
     background-color:rgba(26, 26, 26, 0.85);
+    overflow:visible !important;
+    
 }
 nav {
     width:33%;
@@ -97,6 +105,71 @@ nav {
         display:block;
         
     }
+    .dropDown {
+         padding:2rem;
+        position:absolute;
+        top:50%;
+        z-index:10;
+        background-color:rgba(255, 255, 255, 1);
+        color:black;
+        width:20rem;
+        height:30rem;
+        transform:translateY(-100%);
+        opacity:0;
+        transition:0.5s;
+        display:block;
+        border:2px solid black;
+        padding-block:5rem;
+        
+    }
+  
+    .dropDown li img {
+        width:25px;
+    }
+    .burger {
+        cursor:pointer;
+        z-index:1000;
+    }
+    .dropDown ul {
+        list-style:none;
+        display:flex;
+        flex-direction:column;
+        align-items: flex-start;
+        justify-content: space-evenly;;
+        height:100%;
+        gap:4rem;
+    }
+    .dropDown ul a:nth-of-type(1) {
+        align-self:center;
+    }
+    .logoDropDown {
+        width:100px;
+        
+        
+    }
+    .dropDown button {
+        display:flex;
+        align-items: center;
+        width:auto;
+        padding-left:1rem !important;
+        gap:0.5rem;
+        padding-right:1rem;
+    }
+    .dropDownAdd {
+        display:block;
+        transform:translateY(0);
+        opacity:1;
+        transition:0.5s;
+        
+    }
+    .dropDown ul a {
+        text-decoration:none;
+        color:black;
+        font-weight:bold;
+        display:flex;
+        align-items: center;
+        gap:1rem;
+    }
     nav {
         width:100%;
         display:flex;
@@ -114,6 +187,16 @@ nav {
 @media (max-width:452px) {
     .logo-container {
         left:20%;
+    }
+}
+@media (max-width:426px) {
+    .dropDown {
+        right:5%;
+    }
+}
+@media (max-width:348px) {
+    .dropDown {
+        width:15rem;
     }
 }
 @media (max-width:334px) {
